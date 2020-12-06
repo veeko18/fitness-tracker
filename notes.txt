@@ -1,0 +1,3 @@
+Fitness Tracker notes
+
+ng g c auth/signup --module app.module

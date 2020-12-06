@@ -1,0 +1,16 @@
+<mat-tab-group *ngIf="!ongoingTraining">
+  <mat-tab label="New Training">
+    <app-new-training></app-new-training>
+  </mat-tab>
+  <!-- <mat-tab label="Current Training">
+    <app-current-training></app-current-training>
+  </mat-tab> -->
+  <mat-tab label="Past Training">
+    <app-past-training></app-past-training>
+  </mat-tab>
+</mat-tab-group>
+<app-current-training *ngIf="ongoingTraining"></app-current-training>
+
+<!-- we want to inform component about selectedExercise 
+so that it could hide the mat-tab-group and show 
+app-current-training exercise -->
